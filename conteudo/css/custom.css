@@ -1,0 +1,32 @@
+/*paginação*/
+.pagination li a{
+    width: 48px;
+    height: 48px;
+    border: none;
+    text-indent: -100em;
+}
+.pagination li.visitado a{opacity: .3;}
+.pagination li:first-child a{background: url('../img/1.png') no-repeat;}
+.pagination li:first-child a:hover, .pagination li.active:first-child a{background: url('../img/1_hover.png') no-repeat;}
+.pagination li:nth-child(2) a{background: url('../img/2.png') no-repeat;}
+.pagination li:nth-child(2) a:hover, .pagination li.active:nth-child(2) a{background: url('../img/2_hover.png') no-repeat;}
+.pagination li:nth-child(3) a{background: url('../img/3.png') no-repeat;}
+.pagination li:nth-child(3) a:hover, .pagination li.active:nth-child(3) a{background: url('../img/3_hover.png') no-repeat;}
+.pagination li:nth-child(4) a{background: url('../img/4.png') no-repeat;}
+.pagination li:nth-child(4) a:hover, .pagination li.active:nth-child(4) a{background: url('../img/4_hover.png') no-repeat;}
+.pagination li:nth-child(5) a{background: url('../img/5.png') no-repeat;}
+.pagination li:nth-child(5) a:hover, .pagination li.active:nth-child(5) a{background: url('../img/5_hover.png') no-repeat;}
+.pagination li:nth-child(6) a{background: url('../img/6.png') no-repeat;}
+.pagination li:nth-child(6) a:hover, .pagination li.active:nth-child(6) a{background: url('../img/6_hover.png') no-repeat;}
+.pagination li:nth-child(7) a{background: url('../img/7.png') no-repeat;}
+.pagination li:nth-child(7) a:hover, .pagination li.active:nth-child(7) a{background: url('../img/7_hover.png') no-repeat;}
+
+/*marcadores checklist*/
+ul.check{padding-left: 0;}
+ul.check li{
+    list-style: none;
+    background: url('../img/check.png') no-repeat left top;
+    padding-left: 40px;
+    min-height: 30px;
+    margin-bottom: 10px;
+}

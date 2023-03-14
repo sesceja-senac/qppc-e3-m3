@@ -1,0 +1,162 @@
+#wrapper {
+    height: 100vh;
+    width: 100vw;
+    background-image: url('../tela_inicial/bg.png');
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+.links {
+    background-image: url('../tela_inicial/grafico.png');
+    background-repeat: no-repeat;
+    background-position: top right;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    padding-top: 200px;
+    padding-left: 45%;
+}
+#topo {
+    position: relative;
+    z-index: 99;
+}
+.titulo {
+    position: relative;
+    z-index: 80;
+}
+.links a {
+    display: inline-block;
+    height: fit-content;
+    width: fit-content;
+    position: absolute;
+    z-index: 98;
+}
+.links a:hover {
+    transform: scale(1.05);
+}
+#link-2 {
+    top: 300px;
+    right: 400px;
+}
+#link-3 {
+    top: 400px;
+    right: 100px;
+}
+#link-4 {
+    top: 550px;
+    right: 50px;
+}
+#link-5 {
+    right: 450px;
+    top: 630px;
+}
+.btn-ico {
+    position: relative;
+}
+#link-1::before {
+    content: '';
+    position: absolute;
+    top: -25px;
+    left: -15px;
+    background-image: url('../tela_inicial/bt1-ico.png');
+    height: 305px;
+    width: 202px;
+    z-index: 99;
+    background-repeat: no-repeat;
+}
+#link-2::before {
+    content: '';
+    position: absolute;
+    top: -0px;
+    left: -15px;
+    background-image: url('../tela_inicial/bt2-ico.png');
+    height: 214px;
+    width: 244px;
+    z-index: 99;
+    background-repeat: no-repeat;
+}
+#link-3::before {
+    content: '';
+    position: absolute;
+    top: -0px;
+    left: -85px;
+    background-image: url('../tela_inicial/bt3-ico.png');
+    height: 204px;
+    width: 305px;
+    z-index: 99;
+    background-repeat: no-repeat;
+}
+#link-4::before {
+    content: '';
+    position: absolute;
+    top: -0px;
+    left: -65px;
+    background-image: url('../tela_inicial/bt4-ico.png');
+    height: 233px;
+    width: 282px;
+    z-index: 99;
+    background-repeat: no-repeat;
+}
+#link-5::before {
+    content: '';
+    position: absolute;
+    top: -90px;
+    left: -65px;
+    background-image: url('../tela_inicial/ref.png');
+    height: 299px;
+    width: 280px;
+    z-index: 99;
+    background-repeat: no-repeat;
+}
+.contrato {
+    position: absolute;
+    top: 195px;
+    height: 750px;
+}
+.mao {
+    bottom: 0;
+    left: 470px;
+    position: absolute;
+}
+
+@media (max-width: 1100px) {
+    .contrato, .mao {
+        display: none;
+    }
+    #wrapper {
+        height: auto;
+    }
+    .links {
+        position: relative;
+        padding-top: 0;
+        padding-left: 0;
+        background-image: unset;
+        background-color: transparent;
+        height: auto;
+        width: auto;
+        margin: 20px auto 0px auto;
+        display: block;
+        padding-bottom: 50px;
+    }
+    .links a {
+        margin: 20px auto;
+        position: relative;
+        top: unset !important;
+        bottom: unset !important;
+        right: unset !important;
+        display: flex;
+        transform: scale(0.8);
+        background-color: rgba(55, 55, 55, .5);
+        border-radius: 25px;
+    }
+    .links a img {
+        align-self: center;
+    }
+    .titulo img {
+        width: 100%;
+    }
+    #link-2 {
+        margin-top: 60px;
+    }
+}

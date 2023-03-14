@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Bootstrap CSS v5.0.2 -->      
+        <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/animate.min.css" />
+        <link rel="stylesheet" href="assets/fa/css/all.min.css">
+
+        <!-- <link rel="stylesheet" href="assets-inicial/css/custom.css"> -->
+        <title></title>
+    </head>
+    <body>
+
+        <!-- Bootstrap JavaScript Libraries -->
+        <script src="assets/bootstrap/bootstrap.bundle.min.js"></script>
+        <!--Jquery-->
+        <script src="assets/js/jquery-3.6.0.min.js"></script>
+
+        <!-- Versao atual do handtalk -->
+        <script>
+            var scriptElem = document.createElement("script");
+            scriptElem.src = "https://plugin.handtalk.me/web/latest/handtalk.min.js",
+                scriptElem.charset = "UTF-8",
+                scriptElem.onload = function () {
+                    window.ht = new HT({
+                        token: "bf5b7efb148a829a126a0e0c9fd533bf",
+                        align: "top",
+                        videoEnabled: true,
+                        ytEmbedReplace: true,
+                        mobileConfig: {
+                            align: "right",
+                            actionsAlign: "top",
+                            customButtonStyle: {
+                                borderRadius: "6px",
+                                size: "38px",
+                                horizontalMargin: "13px",
+                                bottomMargin: "140px",
+                                rightMargin: "40px"
+                            }
+                        }
+                    });
+                    $('.ht-skip').attr("aria-hidden", "true")
+                },
+                document.body.appendChild(scriptElem);
+        </script>
+    </body>
+</html>
