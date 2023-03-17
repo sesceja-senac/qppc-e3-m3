@@ -65,6 +65,15 @@ ul.check li{
     background-attachment: fixed;
 }
 
+/*ilustras com efeito rellax*/
+.rellax{
+    position: absolute;
+    z-index: 3;
+}
+.rellax.direita{right: 120px;}
+.rellax1{top: 250px;}
+.rellax2{top: -100px;}
+
 /*conteúdo*/
 h2{
     font-size: 28px;
@@ -73,6 +82,7 @@ h2{
 .container-maior{
     max-width: 1120px;
 }
+.bloco{position: relative;}
 .faixa-amarela{
     background: url('../img/fig_faixa_amarela.png') no-repeat center center;
     background-size: unset;
@@ -102,11 +112,48 @@ h2{
     background: #3d3d3d;
     color: #fff;
 }
-.caixa{
+.caixa, .caixa.icone{
     background:#ff9700;
     border-radius: 30px;
     color: #3d3d3d;
     border: none;
-    width: 60%;
+    width: 70%;
+    border-radius: 70% 55% 100% 55%;
+    padding: 75px;
 }
 .bloco.azul .caixa p{color: #3d3d3d;}
+
+@media screen and (max-width: 580px){
+    .pagination{
+        flex-wrap: wrap;
+    }
+    .caixa, .caixa.icone{
+        width: 100%;
+        border-radius: 30px;
+        padding: 40px;
+        padding-top: 80px;
+    }
+    .icone::before{
+        top: -40px;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+    .faixa-amarela{
+        background: #ff9700;
+        height: auto;
+        padding: 40px 20px;
+        margin: 0;
+        position: unset;
+        z-index: unset;
+    }
+    marquee{
+        width: 100%;
+        padding: 20px;
+    }
+    .bloco{padding: 50px 20px;}
+    .azul.padding-maior{padding: 50px 20px;}
+    .pagina .bloco:last-child{
+        padding-bottom: 200px;
+    }
+}
