@@ -1,4 +1,4 @@
-var snd_path = "../../assets/interativos/esquema_bru/snd/"
+var snd_path = "../assets/interativos/esquema_bru/snd/"
 
 
 var FXManager = {

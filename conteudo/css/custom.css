@@ -91,6 +91,10 @@ ul.check li{
     width: 20%;
     right: 0;
 }
+.rellax7{
+    top: 570px;
+    width: 28%;
+}
 
 /*conteúdo*/
 h2{
@@ -246,6 +250,139 @@ h2{
     box-shadow: 6px 4px 12px -3px rgba(0,0,0,0.75);
 }
 
+.painel-plano{
+    max-width: 710px;
+    background: url('../img/painel_clicavel_planp_comunicacao.png') no-repeat center top;
+    height: 360px;
+    background-size: 90%;
+    position: relative;
+}
+.painel-plano button{
+    width: 90px;
+    height: 90px;
+    border: none;
+    transition: all .4s;
+    position: absolute;
+}
+.painel-plano button:hover{
+    transform: rotate(10deg);
+}
+.painel-plano .bt-plano1{
+    background: url('../img/bt_1.png') no-repeat;
+    left: 0;
+}
+.painel-plano .bt-plano2{
+    background: url('../img/bt_2.png') no-repeat;
+    left: 0;
+    top: 110px;
+}
+.painel-plano .bt-plano3{
+    background: url('../img/bt_3.png') no-repeat;
+    left: 0;
+    top: 220px;
+}
+.painel-plano .bt-plano4{
+    background: url('../img/bt_4.png') no-repeat;
+    right: 0;
+}
+.painel-plano .bt-plano5{
+    background: url('../img/bt_5.png') no-repeat;
+    right: 0;
+    top: 110px;
+}
+.painel-plano .bt-plano1.visitado{background: url('../img/bt_1_vis.png') no-repeat;}
+.painel-plano .bt-plano2.visitado{background: url('../img/bt_2_vis.png') no-repeat;}
+.painel-plano .bt-plano3.visitado{background: url('../img/bt_3_vis.png') no-repeat;}
+.painel-plano .bt-plano4.visitado{background: url('../img/bt_4_vis.png') no-repeat;}
+.painel-plano .bt-plano5.visitado{background: url('../img/bt_5_vis.png') no-repeat;}
+
+.bloco.azul figcaption{color: #fff;}
+.figure-caption{margin-top: 15px;}
+
+.collapse-dado{
+    z-index: 4;
+    position: relative;
+}
+.collapse-dado button{
+    width: 91px;
+    height: 89px;
+    border: none;
+}
+.collapse-dado .bt-dado1{background: url('../img/dado1.png') no-repeat;}
+.collapse-dado .bt-dado2{background: url('../img/dado2.png') no-repeat;}
+.collapse-dado .bt-dado3{background: url('../img/dado3.png') no-repeat;}
+.collapse-dado .bt-dado4{background: url('../img/dado4.png') no-repeat;}
+.collapse-dado .bt-dado5{background: url('../img/dado5.png') no-repeat;}
+.collapse-dado .bt-dado6{background: url('../img/dado6.png') no-repeat;}
+
+.collapse-dado .card-body{
+    background: url('../img/painel_gaitinha_dados.png') no-repeat;
+    background-size: contain;
+    width: 300px;
+    min-height: 290px;
+    padding: 80px 40px;
+    color: #fff;
+}
+.collapse-horizontal{margin-top: -50px;}
+
+.bloco.azul .modal p{color: #000;}
+.painel-estrategias button{
+    width: 201px;
+    height: 233px;
+    margin-bottom: 50px;
+    border: none;
+    background-position: center;
+    transition: transform .4s;
+}
+.painel-estrategias button:hover{
+    transform: rotate(4deg);
+}
+
+.bt-publico{background: url('../img/bt_publico.png') no-repeat;}
+.bt-redes{background: url('../img/bt_redes.png') no-repeat;}
+.bt-website{background: url('../img/bt_website.png') no-repeat;}
+.bt-parcerias{background: url('../img/bt_parcerias.png') no-repeat;}
+.bt-promocao{background: url('../img/bt_promocao.png') no-repeat;}
+.bt-assessoria{background: url('../img/bt_assessoria.png') no-repeat;}
+.bt-publicidade{background: url('../img/bt_publicidade.png') no-repeat;}
+
+.bt-publico:hover{background: url('../img/bt_publico_hv.png') no-repeat;}
+.bt-redes:hover{background: url('../img/bt_redes_hv.png') no-repeat;}
+.bt-website:hover{background: url('../img/bt_website_hv.png') no-repeat;}
+.bt-parcerias:hover{background: url('../img/bt_parceria_hv.png') no-repeat;}
+.bt-promocao:hover{background: url('../img/bt_promocao_hv.png') no-repeat;}
+.bt-assessoria:hover{background: url('../img/bt_assessoria_hv.png') no-repeat;}
+.bt-publicidade:hover{background: url('../img/bt_publicidade_hv.png') no-repeat;}
+
+.bt-publico.visitado{background: url('../img/bt_publico_vis.png') no-repeat;}
+.bt-redes.visitado{background: url('../img/bt_redes_vis.png') no-repeat;}
+.bt-website.visitado{background: url('../img/bt_website_vis.png') no-repeat;}
+.bt-parcerias.visitado{background: url('../img/bt_parcerias_vis.png') no-repeat;}
+.bt-promocao.visitado{background: url('../img/bt_promocao_vis.png') no-repeat;}
+.bt-assessoria.visitado{background: url('../img/bt_assessoria_vis.png') no-repeat;}
+.bt-publicidade.visitado{background: url('../img/bt_publicidade_vis.png') no-repeat;}
+
+.esquemaDaBru .alt-verdadeiro{
+    background: url('../img/bt_verdadeiro_cinza.png') no-repeat;
+    width: 300px;
+    height: 81px;
+    border: none;
+}
+.esquemaDaBru .alt-verdadeiro:hover, .esquemaDaBru .alt-verdadeiro.selected{
+    background: url('../img/bt_veradeiro.png') no-repeat;
+    box-shadow: none;
+}
+.esquemaDaBru .alt-falso{
+    background: url('../img/bt_falso_cinza.png') no-repeat;
+    width: 300px;
+    height: 81px;
+    border: none;
+}
+.esquemaDaBru .alt-falso:hover, .esquemaDaBru .alt-falso.selected{
+    background: url('../img/bt_falso.png') no-repeat;
+    box-shadow: none;
+}
+
 @media screen and (max-width: 1480px){
     .rellax.direita{right: 0;}
     .rellax2{width: 15%;}
@@ -299,4 +436,13 @@ h2{
         width: 160px;
         padding: 15px;
     } 
+    .painel-plano{
+        padding-top: 150px;
+        height: auto;
+    }
+    .painel-plano button{
+        position: unset;
+        margin: 10px auto;
+        display: block;
+    }
 }
