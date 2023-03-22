@@ -95,6 +95,20 @@ ul.check li{
     top: 570px;
     width: 28%;
 }
+.rellax8{
+    top: 150px;
+    width: 20%;
+}
+.rellax9.direita{
+    top: 800px;
+    right: 0;
+    width: 20%;
+}
+.rellax10.esquerda{
+    left: 150px;
+    top: 300px;
+    width: 10%;
+}
 
 /*conteúdo*/
 h2{
@@ -382,6 +396,42 @@ h2{
     background: url('../img/bt_falso.png') no-repeat;
     box-shadow: none;
 }
+
+.icone::before{
+    width: 107px;
+    height: 90px;
+}
+.icone.importante::before {
+    background: url(../img/ico_importante.png) no-repeat transparent;
+}
+
+figure img{max-width: 600px;}
+.destaque-amarelo{
+    background: #ff9700;
+    padding: 50px 0;
+    position: relative;
+}
+.destaque-amarelo p{text-align: center;}
+
+.gaitinha-canva .accordion-item{
+    background: none;
+    border: none;
+}
+.gaitinha-canva .accordion-button{
+    background: none;
+    box-shadow: none;
+    height: 104px;
+    transition: all .4s;
+}
+.gaitinha-canva .accordion-button:hover{transform: rotate(4deg);}
+.gaitinha-canva .accordion-button:hover,
+.gaitinha-canva .accordion-button:focus,
+.gaitinha-canva .accordion-button:not(.collapsed)::before,
+.gaitinha-canva .accordion-button:before,
+.gaitinha-canva .accordion-body{
+    background: none;
+}
+
 
 @media screen and (max-width: 1480px){
     .rellax.direita{right: 0;}
