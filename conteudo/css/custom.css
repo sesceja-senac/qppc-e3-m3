@@ -71,26 +71,31 @@ ul.check li{
     position: absolute;
     z-index: 3;
 }
-.rellax.direita{right: 120px;}
+.rellax.direita{right: 0;}
 .rellax.esquerda{left: 0;}
-.rellax1{top: 250px;}
-.rellax2{top: -100px;}
+.rellax1{
+    top: 300px;
+    width: 15%;
+}
+/* .rellax2.direita{
+    top: -50px;
+    right: 200px;
+} */
 .rellax3{
     top: 100px;
     width: 20%;
 }
 .rellax4{
     top: 1000px;
-    width: 20%;
+    width: 25%;
 }
 .rellax5{
     top: 2000px;
     width: 25%;
 }
-.rellax6.direita{
+.rellax6{
     top: 900px;
     width: 20%;
-    right: 0;
 }
 .rellax7{
     top: 570px;
@@ -100,21 +105,50 @@ ul.check li{
     top: 150px;
     width: 20%;
 }
-.rellax9.direita{
-    top: 800px;
-    right: 0;
+.rellax9{
+    top: 700px;
     width: 20%;
 }
 .rellax10.esquerda{
     left: 150px;
-    top: 300px;
+    top: 350px;
     width: 10%;
 }
-.rellax.direita{
-    right: 0;
-    top: 200px;
+.rellax11{
+    top: 300px;
     width: 20%;
 }
+.rellax12.direita{
+    width: 20%;
+    right: 25%;
+    top: 300px;
+}
+.rellax13{
+    width: 20%;
+    top: 400px;
+}
+.rellax14.esquerda{
+    left: 42%;
+    top: 450px;
+    width: 7%;
+}
+.rellax15.direita{
+    width: 15%;
+    right: 15%;
+    top: 800px;
+}
+.rellax16{
+    width: 20%;
+    top: 400px;
+}
+.rellax17{
+    width: 15%;
+    bottom: 0;
+}
+.rellax18{
+    width: 15%;
+}
+.w-80{width: 80%;}
 
 /*conteúdo*/
 h2{
@@ -246,6 +280,8 @@ h2{
 }
 .icone.atencao::before {
     background: url(../img/ico_atencao.png) no-repeat transparent;
+    width: 127px;
+    height: 119px;
 }
 
 .esquema-vertical{
@@ -345,7 +381,7 @@ h2{
 }
 .collapse-horizontal{margin-top: -50px;}
 
-.bloco.azul .modal p{color: #000;}
+.bloco.azul .modal p, .bloco.azul .modal li, .bloco.azul .modal figcaption{color: #000;}
 .painel-estrategias button{
     width: 201px;
     height: 233px;
@@ -383,26 +419,42 @@ h2{
 .bt-publicidade.visitado{background: url('../img/bt_publicidade_vis.png') no-repeat;}
 
 .esquemaDaBru .alt-verdadeiro{
-    background: url('../img/bt_verdadeiro_cinza.png') no-repeat;
+    background: url('../img/bt_verdadeiro.png') center no-repeat;
     width: 300px;
     height: 81px;
     border: none;
 }
-.esquemaDaBru .alt-verdadeiro:hover, .esquemaDaBru .alt-verdadeiro.selected{
-    background: url('../img/bt_veradeiro.png') no-repeat;
+.esquemaDaBru .alt-verdadeiro:hover{
+    background: url('../img/verdadeiro_hv.png') center no-repeat;
+    box-shadow: none;
+}
+.esquemaDaBru .alt-verdadeiro.alt-e.selected{
+    background: url('../img/bt_verdadeiro_errado.png') center no-repeat;
+    box-shadow: none;
+}
+.esquemaDaBru .alt-verdadeiro.alt-c.selected{
+    background: url('../img/bt_verdadeiro_certo.png') center no-repeat;
     box-shadow: none;
 }
 .esquemaDaBru .alt-falso{
-    background: url('../img/bt_falso_cinza.png') no-repeat;
+    background: url('../img/bt_falso.png') center no-repeat;
     width: 300px;
     height: 81px;
     border: none;
+    background-position: center;
 }
-.esquemaDaBru .alt-falso:hover, .esquemaDaBru .alt-falso.selected{
-    background: url('../img/bt_falso.png') no-repeat;
+.esquemaDaBru .alt-falso:hover{
+    background: url('../img/falso_hv.png') center no-repeat;
     box-shadow: none;
 }
-
+.esquemaDaBru .alt-falso.alt-e.selected{
+    background: url('../img/bt_falso_errado.png') center no-repeat;
+    box-shadow: none;
+}
+.esquemaDaBru .alt-falso.alt-c.selected{
+    background: url('../img/bt_falso_certo.png') center no-repeat;
+    box-shadow: none;
+}
 .icone::before{
     width: 107px;
     height: 90px;
@@ -438,10 +490,57 @@ figure img{max-width: 600px;}
     background: none;
 }
 
+.anim-pulse{
+    animation: pulse 2s infinite;
+}
+
+.painel-redes button{
+    width: 192px;
+    height: 192px;
+    margin-bottom: 20px;
+    transition: all .4s;
+    border: none;
+}
+.painel-redes button:hover{
+    transform: rotate(4deg);
+}
+.bt-facebook{background: url('../img/bt_face_hv.png') no-repeat;}
+.bt-instagram{background: url('../img/bt_insta_hv.png') no-repeat;}
+.bt-whatsapp{background: url('../img/bt_wpp_hv.png') no-repeat;}
+.bt-tiktok{background: url('../img/bt_tiktok_hv.png') no-repeat;}
+
+.painel-midias button{
+    width: 196px;
+    height: 230px;
+    margin-bottom: 20px;
+    border: none;
+}
+.bt-tradicionais{background: url('../img/bt_midias_trad.png') no-repeat;}
+.bt-digitais{background: url('../img/bt_midias_digitais.png') no-repeat;}
+.bt-externas{background: url('../img/bt_midias_ext.png') no-repeat;}
+.bt-organica{background: url('../img/bt_organica.png') no-repeat;}
+
+.bt-tradicionais:hover{background: url('../img/bt_midias_trad_hv.png') no-repeat;}
+.bt-digitais:hover{background: url('../img/bt_midias_digitais_vis_1.png') no-repeat;}
+.bt-externas:hover{background: url('../img/bt_midias_hv.png') no-repeat;}
+.bt-organica:hover{background: url('../img/bt_organica_hv.png') no-repeat;}
+
+.bt-tradicionais.visitado{background: url('../img/bt_midias_trad_vis.png') no-repeat;}
+.bt-digitais.visitado{background: url('../img/bt_midias_digitais_vis.png') no-repeat;}
+.bt-externas.visitado{background: url('../img/bt_midias_ext_vis.png') no-repeat;}
+.bt-organica.visitado{background: url('../img/bt_organica_vis.png') no-repeat;}
+
+.destaque-acessar{
+    background: url('../img/icon_clique.png') no-repeat left 40px center #008189;
+    color: #fff;
+    border-radius: 30px;
+    margin: 0 40px;
+    padding: 30px 130px;
+}
 
 @media screen and (max-width: 1480px){
     .rellax.direita{right: 0;}
-    .rellax2{width: 15%;}
+    /* .rellax2{width: 15%;} */
     .rellax3.esquerda{
         left: -5%;
     }
