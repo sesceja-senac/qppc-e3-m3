@@ -550,6 +550,9 @@ figure img{max-width: 600px;}
     }
     .rellax6{width: 15%;}
 }
+@media screen and (max-width: 1440px){
+    .rellax12.direita{width: 35%;}
+}
 @media screen and (max-width: 580px){
     .pagination{
         flex-wrap: wrap;
@@ -578,7 +581,7 @@ figure img{max-width: 600px;}
         width: 100%;
         padding: 20px;
     }
-    .bloco{padding: 50px 20px;}
+    .bloco{padding: 100px 20px;}
     .azul.padding-maior{padding: 50px 20px;}
     .pagina .bloco:last-child{
         padding-bottom: 200px;
