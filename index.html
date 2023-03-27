@@ -8,16 +8,104 @@
         <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css">
         <link rel="stylesheet" href="assets/css/animate.min.css" />
         <link rel="stylesheet" href="assets/fa/css/all.min.css">
+        <link rel="stylesheet" href="assets/css/aos.css">
+        <link rel="stylesheet" href="assets/css/tela_inicial.css">
 
         <!-- <link rel="stylesheet" href="assets-inicial/css/custom.css"> -->
-        <title></title>
+        <title>Executando o plano de divulgação dos projetos culturais</title>
     </head>
     <body>
+
+        <h1 data-aos="fade-down" data-aos-easing="linear">
+            <span class="visually-hidden">Divulgação</span>
+        </h1>
+        <button type="button" class="btVideo" data-bs-toggle="modal" data-bs-target="#modal-video" aria-hidden="true"></button>
+        <nav class="d-flex flex-wrap justify-content-evenly mx-auto" data-aos="fade-up" data-aos-easing="linear">
+            <li>
+                <a href="conteudo/index.html?page=1" target="_blank" class="introducao">
+                    <span class="visually-hidden">Introdução</span>
+                </a>
+            </li>
+            <li>
+                <a href="conteudo/index.html?page=2" target="_blank" class="recapitulando">
+                    <span class="visually-hidden">Recapitulando</span>
+                </a>
+            </li>
+            <li>
+                <a href="conteudo/index.html?page=3" target="_blank" class="relembrando">
+                    <span class="visually-hidden">Relembrando</span>
+                </a>
+            </li>
+            <li>
+                <a href="conteudo/index.html?page=4" target="_blank" class="criando">
+                    <span class="visually-hidden">Criando materiais de divulgação</span>
+                </a>
+            </li>
+            <li>
+                <a href="conteudo/index.html?page=5" target="_blank" class="parcerias">
+                    <span class="visually-hidden">Parcerias</span>
+                </a>
+            </li>
+            <li>
+                <a href="conteudo/index.html?page=6" target="_blank" class="social">
+                    <span class="visually-hidden">Social media</span>
+                </a>
+            </li>
+            <li>
+                <a href="conteudo/index.html?page=7" target="_blank" class="veiculos">
+                    <span class="visually-hidden">Veículos de divulgação</span>
+                </a>
+            </li>
+            <li>
+                <a href="conteudo/index.html?page=8" target="_blank" class="pos">
+                    <span class="visually-hidden">Pós-comunicação SAC</span>
+                </a>
+            </li>
+            <li>
+                <a href="conteudo/index.html?page=9" target="_blank" class="papel">
+                    <span class="visually-hidden">Papel do produtor cultural</span>
+                </a>
+            </li>
+            <li>
+                <a href="conteudo/index.html?page=10" target="_blank" class="referencias">
+                    <span class="visually-hidden">Referências</span>
+                </a>
+            </li>
+        </nav>
+
+        <div class="modal fade" id="modal-video" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p>Olá! Antes de começar, assista ao vídeo introdutório sobre o módulo a seguir.</p>
+                  <iframe width="460" height="315" src="https://www.youtube.com/embed/" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+              </div>
+            </div>
+        </div>
 
         <!-- Bootstrap JavaScript Libraries -->
         <script src="assets/bootstrap/bootstrap.bundle.min.js"></script>
         <!--Jquery-->
         <script src="assets/js/jquery-3.6.0.min.js"></script>
+        <script src="assets/js/aos.js"></script>
+
+        <script>
+            $(document).ready(function () {
+                AOS.init();
+            })
+            window.addEventListener("load", AOS.refresh);
+
+            $(document).ready(function() {
+                $('#modal-video').modal('show');
+            })
+        </script>
 
         <!-- Versao atual do handtalk -->
         <script>

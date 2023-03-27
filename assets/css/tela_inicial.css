@@ -1,162 +1,67 @@
-#wrapper {
-    height: 100vh;
-    width: 100vw;
-    background-image: url('../tela_inicial/bg.png');
+body{
+    background: url(../../img-inicial/bg.png) center no-repeat;
+    background-attachment: fixed;
     background-size: cover;
-    position: relative;
-    overflow: hidden;
-}
-.links {
-    background-image: url('../tela_inicial/grafico.png');
-    background-repeat: no-repeat;
-    background-position: top right;
-    height: 100%;
     width: 100%;
-    position: absolute;
-    top: 0;
-    padding-top: 200px;
-    padding-left: 45%;
 }
-#topo {
-    position: relative;
-    z-index: 99;
+h1{
+    background: url(../../img-inicial/fig_divulgacao.png) center no-repeat, url(../../img-inicial/fig_faixa_amarela.png) no-repeat;
+    width: 100%;
+    height: 395px;
+    background-size: 50%, contain;
 }
-.titulo {
-    position: relative;
-    z-index: 80;
+nav{
+    width: 90%;
+    margin-bottom: 80px;
 }
-.links a {
-    display: inline-block;
-    height: fit-content;
-    width: fit-content;
-    position: absolute;
-    z-index: 98;
+nav li {
+    list-style: none;
+    margin-bottom: 50px;
+    width: 245px;
+    height: 287px;
+    transition: all .4s;
 }
-.links a:hover {
-    transform: scale(1.05);
+nav li:hover {transform: rotate(4deg);}
+nav li a{
+    width: 245px;
+    height: 287px;
+    display: block;
 }
-#link-2 {
-    top: 300px;
-    right: 400px;
-}
-#link-3 {
-    top: 400px;
-    right: 100px;
-}
-#link-4 {
-    top: 550px;
-    right: 50px;
-}
-#link-5 {
-    right: 450px;
-    top: 630px;
-}
-.btn-ico {
-    position: relative;
-}
-#link-1::before {
-    content: '';
-    position: absolute;
-    top: -25px;
-    left: -15px;
-    background-image: url('../tela_inicial/bt1-ico.png');
-    height: 305px;
-    width: 202px;
-    z-index: 99;
-    background-repeat: no-repeat;
-}
-#link-2::before {
-    content: '';
-    position: absolute;
-    top: -0px;
-    left: -15px;
-    background-image: url('../tela_inicial/bt2-ico.png');
-    height: 214px;
-    width: 244px;
-    z-index: 99;
-    background-repeat: no-repeat;
-}
-#link-3::before {
-    content: '';
-    position: absolute;
-    top: -0px;
-    left: -85px;
-    background-image: url('../tela_inicial/bt3-ico.png');
-    height: 204px;
-    width: 305px;
-    z-index: 99;
-    background-repeat: no-repeat;
-}
-#link-4::before {
-    content: '';
-    position: absolute;
-    top: -0px;
-    left: -65px;
-    background-image: url('../tela_inicial/bt4-ico.png');
-    height: 233px;
-    width: 282px;
-    z-index: 99;
-    background-repeat: no-repeat;
-}
-#link-5::before {
-    content: '';
-    position: absolute;
-    top: -90px;
-    left: -65px;
-    background-image: url('../tela_inicial/ref.png');
-    height: 299px;
-    width: 280px;
-    z-index: 99;
-    background-repeat: no-repeat;
-}
-.contrato {
-    position: absolute;
-    top: 195px;
-    height: 750px;
-}
-.mao {
-    bottom: 0;
-    left: 470px;
-    position: absolute;
+.introducao{background: url('../../img-inicial/bt_introducao.png') center bottom no-repeat;}
+.recapitulando{background: url('../../img-inicial/bt_recapitulando.png') center bottom no-repeat;}
+.relembrando{background: url('../../img-inicial/bt_relembrando.png') center bottom no-repeat;}
+.criando{background: url('../../img-inicial/bt_criando.png') center bottom no-repeat;}
+.parcerias{background: url('../../img-inicial/bt_parcerias.png') center bottom no-repeat;}
+.social{background: url('../../img-inicial/bt_social.png') center bottom no-repeat;}
+.veiculos{background: url('../../img-inicial/bt_veiculos.png') center bottom no-repeat;}
+.pos{background: url('../../img-inicial/bt_pos.png') center bottom no-repeat;}
+.papel{background: url('../../img-inicial/bt_papel.png') center bottom no-repeat;}
+.referencias{background: url('../../img-inicial/bt_referencias.png') center bottom no-repeat;}
+
+.introducao:hover{background: url('../../img-inicial/bt_introducao_hv.png') center bottom no-repeat;}
+.recapitulando:hover{background: url('../../img-inicial/bt_recapitulando_hv.png') center bottom no-repeat;}
+.relembrando:hover{background: url('../../img-inicial/bt_relembrando_hv.png') center bottom no-repeat;}
+.criando:hover{background: url('../../img-inicial/bt_criando_hv.png') center bottom no-repeat;}
+.parcerias:hover{background: url('../../img-inicial/bt_parcerias_hv.png') center bottom no-repeat;}
+.social:hover{background: url('../../img-inicial/bt_social_hv.png') center bottom no-repeat;}
+.veiculos:hover{background: url('../../img-inicial/bt_veiculos_hv.png') center bottom no-repeat;}
+.pos:hover{background: url('../../img-inicial/bt_pos_hv.png') center bottom no-repeat;}
+.papel:hover{background: url('../../img-inicial/bt_papel_hv.png') center bottom no-repeat;}
+.referencias:hover{background: url('../../img-inicial/bt_ref_hv.png') center bottom no-repeat;}
+
+.btVideo{
+    background: url('../../img-inicial/bt-video.png') no-repeat;
+    width: 128px;
+    height: 127px;
+    border: none;
+    background-size: contain;
+    margin: auto;
+    display: block;
 }
 
-@media (max-width: 1100px) {
-    .contrato, .mao {
-        display: none;
-    }
-    #wrapper {
-        height: auto;
-    }
-    .links {
-        position: relative;
-        padding-top: 0;
-        padding-left: 0;
-        background-image: unset;
-        background-color: transparent;
-        height: auto;
-        width: auto;
-        margin: 20px auto 0px auto;
-        display: block;
-        padding-bottom: 50px;
-    }
-    .links a {
-        margin: 20px auto;
-        position: relative;
-        top: unset !important;
-        bottom: unset !important;
-        right: unset !important;
-        display: flex;
-        transform: scale(0.8);
-        background-color: rgba(55, 55, 55, .5);
-        border-radius: 25px;
-    }
-    .links a img {
-        align-self: center;
-    }
-    .titulo img {
-        width: 100%;
-    }
-    #link-2 {
-        margin-top: 60px;
+@media screen and (max-width: 980px){
+    h1{
+        background: url(../../img-inicial/fig_divulgacao.png) center no-repeat;
+        background-size: 80%;
     }
 }
