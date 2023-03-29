@@ -1,0 +1,80 @@
+@font-face {
+    font-family: robotocond-light;
+    src: url("../fonts/RobotoCondensed-Light.ttf");
+}
+@font-face {
+    font-family: robotocond-regular;
+    src: url("../fonts/RobotoCondensed-Regular.ttf");
+}
+
+.obj-whats{
+    background: url('../img/bg.png') repeat;
+    background-attachment: fixed;
+    max-width: 1000px;
+    margin: 50px auto;  
+}
+.obj-whats h4{
+    padding: 15px 80px;
+    background: url('../img/avatar01.png') no-repeat left 20px center #307074;
+    color: #fff;
+    font-family: robotocond-regular;
+    font-size: 20px;
+} 
+.obj-whats .conversa{padding: 30px 120px;}
+.obj-whats .pergunta{
+    background: #e7ffdb;
+    padding: 15px;
+    border-radius: 10px;
+    position: relative;
+}
+.obj-whats .pergunta::before, .obj-whats .resposta::before{
+    content: "";
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 0 5.5px 23px 17.5px;
+    border-color: transparent transparent #e7ffdb transparent;
+    transform: rotate(52deg);
+    position: absolute;
+    left: -9px;
+    top: -8.5px;
+}
+.obj-whats .resposta{
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    position: relative;
+}
+.obj-whats .resposta::before{
+    border-width: 0 5.5px 23px 17.5px;
+    border-color: transparent transparent #fff transparent;
+    right: -9px;
+    left: unset;
+}
+.obj-whats p, .obj-whats p *{
+    font-family: robotocond-light;
+    color: #424242;
+}
+.obj-whats h5{
+    font-family: robotocond-regular;
+    font-size: 18px;
+}
+.obj-whats h5.cor1{color: #ed9234;}
+.obj-whats h5.cor2{color: #03a181;}
+.obj-whats h5.cor3{color: #207cce;}
+.obj-whats h5.cor4{color: #d12fba;}
+.obj-whats p:last-child{margin-bottom: 0;}
+.bt-carregar{
+    color: #fff;
+    background: #307074;
+    font-family: robotocond-regular;
+}
+
+
+
+@media screen and (max-width: 980px){
+    .obj-whats .conversa{padding: 30px 70px;}
+}
+@media screen and (max-width: 560px){
+    .obj-whats .conversa{padding: 30px;}
+}
