@@ -2,32 +2,52 @@
     font-family: robotocond-light;
     src: url("../fonts/RobotoCondensed-Light.ttf");
 }
+
 @font-face {
     font-family: robotocond-regular;
     src: url("../fonts/RobotoCondensed-Regular.ttf");
 }
 
-.obj-whats{
+.txtAudio {
+    border-radius: 27px;
+    left: 180px;
+    box-shadow: 5px 5px 5px #464646;
+    width: 110px;
+    font-size: 75%;
+}
+
+.tam-icone {
+    width: 20px;
+}
+
+.obj-whats {
     background: url('../img/bg.png') repeat;
     background-attachment: fixed;
     max-width: 1000px;
-    margin: 50px auto;  
+    margin: 50px auto;
 }
-.obj-whats h4{
+
+.obj-whats h4 {
     padding: 15px 80px;
     background: url('../img/avatar01.png') no-repeat left 20px center #307074;
     color: #fff;
     font-family: robotocond-regular;
     font-size: 20px;
-} 
-.obj-whats .conversa{padding: 30px 120px;}
-.obj-whats .pergunta{
+}
+
+.obj-whats .conversa {
+    padding: 30px 120px;
+}
+
+.obj-whats .pergunta {
     background: #e7ffdb;
     padding: 15px;
     border-radius: 10px;
     position: relative;
 }
-.obj-whats .pergunta::before, .obj-whats .resposta::before{
+
+.obj-whats .pergunta::before,
+.obj-whats .resposta::before {
     content: "";
     width: 0px;
     height: 0px;
@@ -39,42 +59,150 @@
     left: -9px;
     top: -8.5px;
 }
-.obj-whats .resposta{
+
+.obj-whats .resposta {
     background: #fff;
     padding: 15px;
     border-radius: 10px;
     position: relative;
 }
-.obj-whats .resposta::before{
+
+.obj-whats .resposta::before {
     border-width: 0 5.5px 23px 17.5px;
     border-color: transparent transparent #fff transparent;
     right: -9px;
     left: unset;
 }
-.obj-whats p, .obj-whats p *{
+
+.obj-whats p,
+.obj-whats p * {
     font-family: robotocond-light;
     color: #424242;
 }
-.obj-whats h5{
+
+.obj-whats h5 {
     font-family: robotocond-regular;
     font-size: 18px;
 }
-.obj-whats h5.cor1{color: #ed9234;}
-.obj-whats h5.cor2{color: #03a181;}
-.obj-whats h5.cor3{color: #207cce;}
-.obj-whats h5.cor4{color: #d12fba;}
-.obj-whats p:last-child{margin-bottom: 0;}
-.bt-carregar{
+
+.obj-whats h5.cor1 {
+    color: #ed9234;
+}
+
+.obj-whats h5.cor2 {
+    color: #03a181;
+}
+
+.obj-whats h5.cor3 {
+    color: #207cce;
+}
+
+.obj-whats h5.cor4 {
+    color: #d12fba;
+}
+
+.obj-whats p:last-child {
+    margin-bottom: 0;
+}
+
+.bt-carregar {
     color: #fff;
     background: #307074;
     font-family: robotocond-regular;
 }
 
-
-
-@media screen and (max-width: 980px){
-    .obj-whats .conversa{padding: 30px 70px;}
+@media screen and (max-width: 980px) {
+    .obj-whats .conversa {
+        padding: 30px 70px;
+    }
 }
-@media screen and (max-width: 560px){
-    .obj-whats .conversa{padding: 30px;}
+
+@media screen and (max-width: 560px) {
+    .obj-whats .conversa {
+        padding: 30px;
+    }
+}
+
+/***********************************************************************************/
+/************************** Estilo para o player de áudio *************************/
+/**********************************************************************************/
+
+audio {
+    display: block;
+    width: 100%;
+    background-color: #f5f5f5;
+    border-radius: 16px;
+    padding: 8px;
+}
+
+/* Estilo para o botão de play/pause */
+audio::-webkit-media-controls-play-button,
+audio::-webkit-media-controls-pause-button,
+audio::-webkit-media-controls-play-button:hover,
+audio::-webkit-media-controls-pause-button:hover {
+    background-color: #128C7E;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    -webkit-mask-size: contain;
+    mask-size: contain;
+}
+
+/* Estilo para o tempo de duração e tempo atual */
+audio::-webkit-media-controls-time-remaining-display,
+audio::-webkit-media-controls-current-time-display {
+    font-size: 12px;
+    margin-left: 8px;
+    color: #333;
+}
+
+/* Estilo para a barra de progresso */
+audio::-webkit-media-controls-enclosure {
+    border-radius: 16px;
+    height: 8px;
+}
+
+audio::-webkit-media-controls-played-progress,
+audio::-webkit-media-controls-seek-back-button,
+audio::-webkit-media-controls-seek-forward-button {
+    background-color: #128C7E;
+}
+
+audio::-webkit-media-controls-volume-slider-container {
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+audio::-webkit-media-controls-volume-slider,
+audio::-webkit-media-controls-mute-button {
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+/* Estilo para o botão de volume */
+audio::-webkit-media-controls-mute-button {
+    width: 24px;
+    height: 24px;
+    background-color: #128C7E;
+    border-radius: 50%;
+    -webkit-mask-size: contain;
+    mask-size: contain;
+}
+
+/* Estilo para o ícone de alto-falante */
+audio::-webkit-media-controls-volume-slider::-webkit-media-controls-volume-slider-thumb {
+    width: 20px;
+    height: 20px;
+    background-color: #128C7E !important;
+    border-radius: 50%;
+    -webkit-mask-size: contain;
+    mask-size: contain;
+}
+
+audio::-webkit-media-controls-fullscreen-button,
+audio::-webkit-media-controls-rewind-button,
+audio::-webkit-media-controls-return-to-realtime-button,
+audio::-webkit-media-controls-toggle-closed-captions-button,
+audio::-webkit-media-controls-toggle-closed-captions-button:hover {
+    display: none;
 }
