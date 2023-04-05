@@ -19,6 +19,7 @@
         <h1 data-aos="fade-down" data-aos-easing="linear">
             <span class="visually-hidden">Divulgação</span>
         </h1>
+        <p class="texto-video">Assista novamente ao vídeo introdutório deste módulo.</p>
         <button type="button" class="btVideo" data-bs-toggle="modal" data-bs-target="#modal-video" aria-hidden="true"></button>
         <nav class="d-flex flex-wrap justify-content-evenly mx-auto" data-aos="fade-up" data-aos-easing="linear">
             <li>
@@ -41,16 +42,19 @@
                     <span class="visually-hidden">Criando materiais de divulgação</span>
                 </a>
             </li>
+            <!--
             <li>
                 <a href="conteudo/index.html?page=5" target="_blank" class="parcerias">
                     <span class="visually-hidden">Parcerias</span>
                 </a>
             </li>
+            -->
             <li>
-                <a href="conteudo/index.html?page=6" target="_blank" class="social">
+                <a href="conteudo/index.html?page=5" target="_blank" class="social">
                     <span class="visually-hidden">Social media</span>
                 </a>
             </li>
+            <!--
             <li>
                 <a href="conteudo/index.html?page=7" target="_blank" class="veiculos">
                     <span class="visually-hidden">Veículos de divulgação</span>
@@ -61,18 +65,20 @@
                     <span class="visually-hidden">Pós-comunicação SAC</span>
                 </a>
             </li>
+            -->
             <li>
-                <a href="conteudo/index.html?page=9" target="_blank" class="papel">
+                <a href="conteudo/index.html?page=6" target="_blank" class="papel">
                     <span class="visually-hidden">Papel do produtor cultural</span>
                 </a>
             </li>
             <li>
-                <a href="conteudo/index.html?page=10" target="_blank" class="referencias">
+                <a href="conteudo/index.html?page=7" target="_blank" class="referencias">
                     <span class="visually-hidden">Referências</span>
                 </a>
             </li>
         </nav>
 
+        <!--
         <div class="modal fade" id="modal-video" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
               <div class="modal-content">
@@ -89,12 +95,30 @@
               </div>
             </div>
         </div>
+        -->
+
+        <div class="backdrop" aria-hidden="true">
+            <div class="modal-intro">
+                <p>Olá! Antes de começar, assista ao vídeo introdutório sobre o módulo a seguir.</p>
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="d-none d-sm-block" width="460" height="315" src="https://www.youtube.com/embed/G3o4Y4IS8hk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <iframe class="d-block d-sm-none mt-4 mb-3" width="320" height="180" src="https://www.youtube.com/embed/G3o4Y4IS8hk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+
+                <div class="footer">
+                <button class="botao-fechar">
+                    Fechar
+                </button>
+                </div>
+            </div>
+        </div>
 
         <!-- Bootstrap JavaScript Libraries -->
         <script src="assets/bootstrap/bootstrap.bundle.min.js"></script>
         <!--Jquery-->
         <script src="assets/js/jquery-3.6.0.min.js"></script>
         <script src="assets/js/aos.js"></script>
+        <script src="assets/js/tela_inicial.js"></script>
 
         <script>
             $(document).ready(function () {

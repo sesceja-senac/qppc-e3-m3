@@ -18,3 +18,18 @@ $(function () {
   $('.painel-estrategias button').click(function(){$(this).addClass('visitado')})
   
 });
+
+$(function () {
+  $('.bt-tradicionais').click(function(){
+    $(this).addClass('visitado');
+  });
+  $('.bt-digitais').click(function(){
+    $(this).addClass('visitado');
+  });
+  $('.bt-externas').click(function(){
+    $(this).addClass('visitado');
+  });
+  $('.bt-organica').click(function(){
+    $(this).addClass('visitado');
+  });
+});
