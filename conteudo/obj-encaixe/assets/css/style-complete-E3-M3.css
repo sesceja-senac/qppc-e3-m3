@@ -1,0 +1,102 @@
+:root {
+    --text-buttons: #004649;
+    --cor-header-positivo: #004649;
+    --cor-header-negativo: #e65141;
+    --cor-header-opcoes: #ff9700;
+}
+
+/********************************************************************************/
+/********************************* estilo tela inicial**************************/
+/******************************************************************************/
+
+.conteudo-complete-frase {
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin: auto;
+    background: url(../img/bg.png) top left / cover no-repeat;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.oculto {
+    display: none;
+}
+
+.frase-incompleta {
+    background-color: #ff9700;
+    border-radius: 20px;
+    max-width: 600px;
+    margin-left: auto; 
+    margin-right: auto;
+    width: 100%;
+    display: block;
+    text-align: left;
+    
+    
+}
+.bg-papel {
+    background-color: #fbc371;
+    border-radius: 10px;
+    margin: 0px;
+    padding: 10px 16px !important;
+    margin-bottom: 20px;
+    margin-top: 10px !important;
+}
+
+.img-fluid.logo-complete.position-absolute {
+    top: 38px;
+    left: 35px;
+}
+
+.destaque {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.texto-papel, .btn.papel-branco.sem-fundo {
+    color: var(--text-buttons);
+    font-size: 20px;
+    text-align: left;
+    padding: 3%;
+}
+.texto-papel {
+    margin-top: 0px;
+    padding-top: 0px;
+}
+.img-btn {
+    width: 200px;
+    padding-right: 0.5%;
+}
+
+.img-btn:hover {
+    transform: scale(1.1);
+}
+
+/********************************************************************************/
+/********************************* estilo modais********************************/
+/******************************************************************************/
+
+.modal-header.cabeca-acertou {
+    background-color: var(--cor-header-positivo);
+    color: white;
+}
+
+.modal-body.corpo-acertou {
+    color: var(--text-buttons);
+    font-size: 125%;
+}
+
+.modal-header.cabeca-errou {
+    background-color: var(--cor-header-negativo);
+    color: white;
+}
+
+.modal-body.corpo-errou {
+    color: var(--text-buttons);
+    font-size: 125%;
+}
+
+.header-menu {
+    background-color: var(--cor-header-opcoes);
+}
