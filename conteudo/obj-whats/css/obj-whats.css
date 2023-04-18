@@ -140,69 +140,6 @@ audio {
     padding: 8px;
 }
 
-/* Estilo para o botão de play/pause */
-audio::-webkit-media-controls-play-button,
-audio::-webkit-media-controls-pause-button,
-audio::-webkit-media-controls-play-button:hover,
-audio::-webkit-media-controls-pause-button:hover {
-    background-color: #128C7E;
-    border-radius: 50%;
-    width: 36px;
-    height: 36px;
-    -webkit-mask-size: contain;
-    mask-size: contain;
-}
-
-/* Estilo para o tempo de duração e tempo atual */
-audio::-webkit-media-controls-time-remaining-display,
-audio::-webkit-media-controls-current-time-display {
-    font-size: 12px;
-    margin-left: 8px;
-    color: #333;
-}
-
-/* Estilo para a barra de progresso */
-audio::-webkit-media-controls-enclosure {
-    border-radius: 16px;
-    height: 8px;
-}
-
-audio::-webkit-media-controls-played-progress,
-audio::-webkit-media-controls-seek-back-button,
-audio::-webkit-media-controls-seek-forward-button {
-    background-color: #128C7E;
-}
-
-audio::-webkit-media-controls-volume-slider-container {
-    margin-left: 8px;
-    margin-right: 8px;
-}
-
-audio::-webkit-media-controls-volume-slider,
-audio::-webkit-media-controls-mute-button {
-    -webkit-appearance: none;
-    appearance: none;
-}
-
-/* Estilo para o botão de volume */
-audio::-webkit-media-controls-mute-button {
-    width: 24px;
-    height: 24px;
-    background-color: #128C7E;
-    border-radius: 50%;
-    -webkit-mask-size: contain;
-    mask-size: contain;
-}
-
-/* Estilo para o ícone de alto-falante */
-audio::-webkit-media-controls-volume-slider::-webkit-media-controls-volume-slider-thumb {
-    width: 20px;
-    height: 20px;
-    background-color: #128C7E !important;
-    border-radius: 50%;
-    -webkit-mask-size: contain;
-    mask-size: contain;
-}
 
 audio::-webkit-media-controls-fullscreen-button,
 audio::-webkit-media-controls-rewind-button,
