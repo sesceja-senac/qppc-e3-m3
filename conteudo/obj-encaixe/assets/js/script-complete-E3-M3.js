@@ -223,26 +223,26 @@ function criaModalNegativa() {
     var modalBody = '';
     var modalId = 'modal-errou-' + i;
     switch (i) {
-      case 1:
-        modalTitle = 'Tente novamente!';
-        modalBody = 'SPOT é uma material sonoro para divulgação em meios radiofônicos.';
-        break;
-      case 2:
-        modalTitle = 'Tente novamente!';
-        modalBody = 'STORY são materiais audiovisuais de até 30 segundos, para divulgação em redes sociais.';
-        break;
-      case 3:
-        modalTitle = 'Tente novamente!';
-        modalBody = 'CARTAZ são materiais impressos de divulgação, podendo ser fixados em diferentes lugares.';
-        break;
-      case 4:
-        modalTitle = 'Tente novamente!';
-        modalBody = 'RELEASE é um texto jornalístico divulgando a obra.';
-        break;
-      case 5:
-        modalTitle = 'Tente novamente!';
-        modalBody = 'TREND é um conceito usado na divulgação, que “surfa” na onda de outras divulgações, notícias e materiais.';
-        break;
+      // case 1:
+      //   modalTitle = 'Tente novamente!';
+      //   modalBody = 'SPOT é uma material sonoro para divulgação em meios radiofônicos.';
+      //   break;
+      // case 2:
+      //   modalTitle = 'Tente novamente!';
+      //   modalBody = 'STORY são materiais audiovisuais de até 30 segundos, para divulgação em redes sociais.';
+      //   break;
+      // case 3:
+      //   modalTitle = 'Tente novamente!';
+      //   modalBody = 'CARTAZ são materiais impressos de divulgação, podendo ser fixados em diferentes lugares.';
+      //   break;
+      // case 4:
+      //   modalTitle = 'Tente novamente!';
+      //   modalBody = 'RELEASE é um texto jornalístico divulgando a obra.';
+      //   break;
+      // case 5:
+      //   modalTitle = 'Tente novamente!';
+      //   modalBody = 'TREND é um conceito usado na divulgação, que “surfa” na onda de outras divulgações, notícias e materiais.';
+      //   break;
     }
     var modalHtml = '<div class="modal fade" id="' + modalId + '" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"> \
     <div class="modal-dialog"> \

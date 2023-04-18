@@ -59,13 +59,6 @@ nav li a{
     display: block;
 }
 
-@media screen and (max-width: 980px){
-    h1{
-        background: url(../../img-inicial/fig_divulgacao.png) center no-repeat;
-        background-size: 80%;
-    }
-}
-
 
 .modal-dialog:not(.modal-fullscreen) {
     border-radius: 0;
@@ -154,10 +147,72 @@ nav li a{
     margin-top: -40px;
 }
 
-@media screen and (max-width: 580px) {
-    body {
-        overflow-x: hidden;
+@media screen and (max-width: 980px){
+    h1{
+        background: url(../../img-inicial/fig_divulgacao.png) center no-repeat;
+        background-size: 80%;
     }
+}
+
+@media screen and (max-width: 580px) {
+    h1{
+        background: url(../../img-inicial/mobile/mob_titulo.png) center 87px no-repeat;
+        width: 100%;
+        background-size: 100%, contain;
+    }
+}
+@media screen and (max-width: 780px) {
+    h1 {
+        background: url(../../img-inicial/fig_divulgacao.png) center 50px no-repeat, url(../../img-inicial/fig_faixa_amarela.png) no-repeat;
+        width: 100%;
+        height: 315px;
+        background-size: 59%, contain;
+    }
+    body{
+        background: url(../../img-inicial/mobile/mob_bg.png) center no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        width: 100%;
+    }
+    nav li{
+        /* transform: scale(0.9);
+        margin: -40px; */
+        display: inline-block;
+        width: calc(245px * .6);
+        height: calc(287px * .6);
+    } 
+    nav li a{
+        /* transform: scale(0.9);
+        margin: -40px; */
+        
+        width: calc(245px * .6);
+        height: calc(287px * .6);
+    } 
+    nav{
+        text-align: center;
+    }
+    .introducao{background: url('../../img-inicial/mobile/mob_bt1.png') center bottom no-repeat;}
+    .recapitulando{background: url('../../img-inicial/mobile/mob_bt2.png') center bottom no-repeat;}
+    .relembrando{background: url('../../img-inicial/mobile/mob_bt3.png') center bottom no-repeat;}
+    .criando{background: url('../../img-inicial/mobile/mob_bt4.png') center bottom no-repeat;}
+    .parcerias{background: url('../../img-inicial/mobile/mob_bt5.png') center bottom no-repeat;}
+    .social{background: url('../../img-inicial/mobile/mob_bt6.png') center bottom no-repeat;}
+    .veiculos{background: url('../../img-inicial/mobile/mob_bt7.png') center bottom no-repeat;}
+    .pos{background: url('../../img-inicial/mobile/mob_bt8.png') center bottom no-repeat;}
+    .papel{background: url('../../img-inicial/mobile/mob_bt9.png') center bottom no-repeat;}
+    .referencias{background: url('../../img-inicial/mobile/mob_bt10.png') center bottom no-repeat;}
+
+    .introducao:hover{background: url('../../img-inicial/mobile/mob_bt1_hover.png') center bottom no-repeat;}
+    .recapitulando:hover{background: url('../../img-inicial/mobile/mob_bt2_hover.png') center bottom no-repeat;}
+    .relembrando:hover{background: url('../../img-inicial/mobile/mob_bt3_hover.png') center bottom no-repeat;}
+    .criando:hover{background: url('../../img-inicial/mobile/mob_bt4_hover.png') center bottom no-repeat;}
+    .parcerias:hover{background: url('../../img-inicial/mobile/mob_bt5_hover.png') center bottom no-repeat;}
+    .social:hover{background: url('../../img-inicial/mobile/mob_bt6_hover.png') center bottom no-repeat;}
+    .veiculos:hover{background: url('../../img-inicial/mobile/mob_bt7_hover.png') center bottom no-repeat;}
+    .pos:hover{background: url('../../img-inicial/mobile/mob_bt8_hover.png') center bottom no-repeat;}
+    .papel:hover{background: url('../../img-inicial/mobile/mob_bt9_hover.png') center bottom no-repeat;}
+    .referencias:hover{background: url('../../img-inicial/mobile/mob_bt10_hover.png') center bottom no-repeat;}
+    
     .modal-intro {
         width: 100%;
         padding: 15px;
@@ -169,27 +224,18 @@ nav li a{
     .footer {
         width: 100%;
     }
-
-    .texto-video{
+    .texto-video {
         margin-top: -100px;
         margin-bottom: 20px;
+        text-align: center;
+        word-break: break-word;
+        width: 90%;
+        /* margin-right: -38px; */
+        padding-left: 38px;
     }
     .btVideo{
         margin-bottom: 50px;
     }
-}
-
-@media screen and (max-width: 768px) {
-    .bt-1 {
-        background: url(../imgs/bt_iniciar_mobile.png) no-repeat;
-        margin: auto;
-    }
-
-    .bt-1:hover {
-        background: url(../imgs/bt_iniciar_hover_mobile.png) no-repeat;
-        margin: auto;
-    }
-
 }
 
 @media screen and (max-width: 820px) {

@@ -52,6 +52,8 @@
 .destaque {
     text-transform: uppercase;
     font-weight: bold;
+    background-color: #004649;
+    color: #fff;
 }
 
 .texto-papel, .btn.papel-branco.sem-fundo {

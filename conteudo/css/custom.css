@@ -11,7 +11,9 @@
 h2{
     margin-bottom: 40px;
 }
-
+.laranja{
+    color: #ff9700;
+}
 /*paginação*/
 footer{
     position: absolute;
@@ -46,7 +48,7 @@ ul.check li{
 
 /*tooltip*/
 .bt-tooltip{
-    font-size: 17px;
+    /* font-size: 17px; */
     border: none;
     border-bottom: 2px dashed ;
     background: none;
@@ -105,17 +107,17 @@ ul.check li{
     top: 570px;
     width: 25%;
 }
-.rellax8{
-    top: 150px;
+.rellax8 {
+    top: 12px;
     width: 20%;
 }
-.rellax9{
-    top: 700px;
+.rellax9 {
+    top: 528px;
     width: 20%;
 }
-.rellax10.esquerda{
+.rellax10.esquerda {
     left: 150px;
-    top: 350px;
+    top: 209px;
     width: 10%;
 }
 .rellax11{
