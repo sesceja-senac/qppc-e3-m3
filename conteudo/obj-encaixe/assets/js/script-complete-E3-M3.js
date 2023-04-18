@@ -219,8 +219,8 @@ function quizCompleteFrase() {
 
 function criaModalNegativa() {
   for (var i = 1; i <= 5; i++) {
-    var modalTitle = 'Tente novamente!';
-    var modalBody = '';
+    var modalTitle = 'Resposta incorreta!';
+    var modalBody = 'Tente novamente.';
     var modalId = 'modal-errou-' + i;
     switch (i) {
       // case 1:
