@@ -568,6 +568,18 @@ figure img{max-width: 600px;}
     padding: 30px 130px;
 }
 
+.ytb-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.ytb {
+    width: 360px;
+    height: 220px;
+    margin: 15px;
+}
+
 @media screen and (max-width: 1480px){
     .rellax.direita{right: 0;}
     /* .rellax2{width: 15%;} */
